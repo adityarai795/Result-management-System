@@ -4,7 +4,7 @@ import axios from 'axios'
 function Teacher() {
   const [data,setData]=useState();
 useEffect(()=>{
-    axios.get("http://localhost:4000/teacher/getStudentall")
+    axios.get("https://result-management-system-backend.onrender.com/teacher/getStudentall")
     .then((res)=>{
       console.log(res.data)
       setData(res.data);

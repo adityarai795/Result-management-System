@@ -5,7 +5,7 @@ import axios from "axios";
 function Admin() {
   const [data,setData]=useState();
   useEffect(()=>{
-      axios.get("http://localhost:4000/admin/getTeacher")
+      axios.get("https://result-management-system-backend.onrender.com/admin/getTeacher")
       .then((res)=>{
         console.log(res.data)
         setData(res.data);

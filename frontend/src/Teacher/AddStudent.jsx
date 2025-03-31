@@ -9,7 +9,7 @@ function AddStudent() {
   const [branch,setBranch]=useState();
   const handlesubmit=(e)=>{
     e.preventDefault();
-    const res =axios.post("http://localhost:4000/teacher/addStudent",{
+    const res =axios.post("https://result-management-system-backend.onrender.com/teacher/addStudent",{
       name,
       rollno,
       branch

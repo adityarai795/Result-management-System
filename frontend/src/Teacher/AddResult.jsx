@@ -11,7 +11,7 @@ function AddResult() {
   const handlesubmit=async(e)=>{
 
     e.preventDefault();
-    const res=await axios.put(`http://localhost:4000/teacher/studentResult/${rollno}`,{
+    const res=await axios.put(`https://result-management-system-backend.onrender.com/teacher/studentResult/${rollno}`,{
       subject: [{ name: subject, mark: Number(mark) }]
     });
     console.log(res.data);

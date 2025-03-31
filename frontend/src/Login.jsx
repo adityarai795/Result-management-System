@@ -13,7 +13,7 @@ function Login() {
       if(email==="raju@gmail.com" && password==="1234" ){
         navigate("/Admin");
       }else{
-        const res = await axios.post("http://localhost:4000/admin/login", {
+        const res = await axios.post("https://result-management-system-backend.onrender.com/admin/login", {
           email,
           password
         });

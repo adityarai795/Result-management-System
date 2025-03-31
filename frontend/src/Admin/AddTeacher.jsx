@@ -11,7 +11,7 @@ const handlesubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const res = await axios.post("http://localhost:4000/admin/addTeacher", {
+    const res = await axios.post("https://result-management-system-backend.onrender.com/admin/addTeacher", {
       name,
       email,
       password

@@ -8,7 +8,7 @@ function ResultCard() {
   const [loading ,setLoading]=useState(true);
   const { id } = useParams(); 
   useEffect(()=>{
-    axios.get(`http://localhost:4000/teacher/showResult/${id}`)
+    axios.get(`https://result-management-system-backend.onrender.com/teacher/showResult/${id}`)
     .then((res)=>{
       console.log(res.data);
       setData(res.data)
