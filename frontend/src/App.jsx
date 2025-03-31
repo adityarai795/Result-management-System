@@ -11,7 +11,7 @@ import Teacher from './Teacher/Teacher';
 import AddResult from './Teacher/AddResult';
 import AddStudent from './Teacher/AddStudent'
 import Login from './Login';
-import './app.css';
+import './App.css';
 
 function App() {
   return (
