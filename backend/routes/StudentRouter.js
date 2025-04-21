@@ -45,7 +45,7 @@ router.put("/studentResult/:rollno",async(req,res)=>{
  
   try {
     const {subject}=req.body;
-    const student=await Student.findOneAndUpdate({rollno}, { $set: { subject } }})
+    const student=await Student.findOneAndUpdate({rollno}, { $set: { subject } })
     
     await student.save()
     if(!student){
